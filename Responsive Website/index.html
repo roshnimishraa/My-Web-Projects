@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+    #grid-container{
+     display: grid;
+
+     grid-template-columns: repeat(4,1fr);
+ 
+  /* grid-auto-rows: minmax(100px,auto); */
+  gap:20px;
+    }
+    .grid-item{
+          background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+width: 150px;
+height: 150px;
+  font-size: 30px;
+  margin: auto;
+  place-items: center;
+
+    }
+    #container{
+        width:100%;
+        text-align: center;
+    }
+    img{
+        height:200px;
+        width: 200px;
+        margin-bottom: 20px;
+
+    }
+#brand{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+ margin:auto;  
+ place-items: center;
+}
+   /* Mobile View */
+      @media screen and (min-width:250px) and (max-width:480px) {
+        #grid-container{
+     grid-template-columns: repeat(1,1fr);
+    }
+#brand{
+
+    grid-template-columns: repeat(1,1fr);
+}
+      }
+
+       /* Tablet View */
+       @media screen and (min-width:481px) and (max-width:768px) {
+        #grid-container{
+     grid-template-columns: repeat(2,1fr);
+    }
+#brand{
+
+    grid-template-columns: repeat(1,1fr);
+}
+
+      }
+       /* Laptop View */
+       @media screen and (min-width:769px) and (max-width:1024px) {
+        #grid-container{
+     grid-template-columns: repeat(3,1fr);
+    }
+#brand{
+
+    grid-template-columns: repeat(3,1fr);
+}
+      }
+
+    </style>
+</head>
+<body>
+  
+<div id="container">
+    <h1>Learning Responsive Web Application</h1>
+    <div id="brand"> 
+        <img src="Roshni Mishra1.jpg">
+        <img src="Roshni Mishra1.jpg">
+        <img src="Roshni Mishra1.jpg">
+      </div>
+</div>
+
+    <div id="grid-container">
+        <img class="grid-item" src="https://cdn.pixabay.com/photo/2023/04/06/10/22/earth-day-7903523_960_720.png" alt="Reloading">
+        <img  class="grid-item" src="https://cdn.pixabay.com/photo/2023/03/14/19/23/flowers-7853014_960_720.jpg">
+        <img  class="grid-item" src="https://cdn.pixabay.com/photo/2023/04/06/10/22/earth-day-7903523_960_720.png" alt="Reloading">
+        <img  class="grid-item" src="https://cdn.pixabay.com/photo/2023/03/14/19/23/flowers-7853014_960_720.jpg">
+        <img  class="grid-item" src="https://cdn.pixabay.com/photo/2023/03/14/19/23/flowers-7853014_960_720.jpg">
+        <img  class="grid-item" src="https://cdn.pixabay.com/photo/2023/03/14/19/23/flowers-7853014_960_720.jpg">
+        <img  class="grid-item" src="https://cdn.pixabay.com/photo/2023/03/14/19/23/flowers-7853014_960_720.jpg">
+        <img  class="grid-item" src="https://cdn.pixabay.com/photo/2023/03/14/19/23/flowers-7853014_960_720.jpg">
+        <img  class="grid-item" src="https://cdn.pixabay.com/photo/2023/03/14/19/23/flowers-7853014_960_720.jpg">
+        <img  class="grid-item" src="https://cdn.pixabay.com/photo/2023/03/14/19/23/flowers-7853014_960_720.jpg">
+        <img  class="grid-item" src="https://cdn.pixabay.com/photo/2023/03/14/19/23/flowers-7853014_960_720.jpg">
+      
+        <img  class="grid-item" src="https://cdn.pixabay.com/photo/2023/03/14/19/23/flowers-7853014_960_720.jpg">
+        <img  class="grid-item" src="https://cdn.pixabay.com/photo/2023/03/14/19/23/flowers-7853014_960_720.jpg">
+        <img  class="grid-item" src="https://cdn.pixabay.com/photo/2023/03/14/19/23/flowers-7853014_960_720.jpg">
+        <img  class="grid-item" src="https://cdn.pixabay.com/photo/2023/03/14/19/23/flowers-7853014_960_720.jpg">
+    </div>
+</body>
+</html>

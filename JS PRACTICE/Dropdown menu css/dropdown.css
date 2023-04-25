@@ -1,0 +1,43 @@
+*{
+    padding:0px;
+    margin:0px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+ul{
+    list-style-type: none;
+    background-color: #22438C;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+}
+ul li a{
+    display: block;
+    padding:20px 25px;
+    color:#fff;
+    text-decoration: none;
+    text-align:center;
+    font-size:20px;
+}
+
+ul li ul .dropdown li{
+ display:block;
+}
+/* sub menu nav bar */
+ul li ul.dropdown{
+    width:100%;
+    background:#22538C;
+    position:absolute;
+    z-index:999;
+    display: none;
+}
+ul li a:hover{
+    background-color: #112c66;
+
+}
+/* displaying of sub menu bar */
+ul li:hover ul.dropdown{
+    display: block;
+}
